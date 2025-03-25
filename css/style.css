@@ -71,15 +71,18 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
   Typography
 *****************************/
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
   color: #D4D6D7;
   overflow-x: hidden;
-  background-color: #000000;
+  background: #121212;
 }
-
+.content-wrapper{
+  background: url(../images/spc/bg-body.jpg) no-repeat center fixed;
+  object-fit: cover;
+}
 a {
   outline: medium none !important;
   color: #77BEFF;
@@ -122,9 +125,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   margin: 0px 0px 1rem;
+  font-weight: 700;
 }
 
 h1 a,
@@ -268,9 +272,7 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
-  background: linear-gradient(60deg, #3663D8 -20%, #77BEFF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #04B9CB;
 }
 
 .section-title .title {
@@ -982,7 +984,7 @@ blockquote.blockquote-style-1:before {
 
 /*Font Weight*/
 .fw-600 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .fw-500 {
@@ -1551,7 +1553,7 @@ blockquote.blockquote-style-1:before {
   background-image: inherit;
   font-family: 'Font Awesome 5 Free';
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
   width: 40px;
   height: 40px;
@@ -1692,7 +1694,7 @@ blockquote.blockquote-style-1:before {
   gap: 15px;
   font-size: 16px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
   background: linear-gradient(90deg, #3663D8 0%, #77BEFF 100%);
@@ -1773,7 +1775,7 @@ blockquote.blockquote-style-1:before {
   line-height: normal;
   font-weight: bold;
   color: #ffffff;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
   display: block;
 }
@@ -2042,11 +2044,11 @@ blockquote.blockquote-style-1:before {
 }
 
 .blog-post-wrapper.blog-style-1 .blog-action-info .post-category {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -2337,7 +2339,7 @@ blockquote.blockquote-style-1:before {
 .team-item .team-info .team-title {
   font-size: 26px;
   line-height: 34px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   display: block;
   margin-bottom: 5px;
@@ -2385,7 +2387,7 @@ blockquote.blockquote-style-1:before {
   justify-content: center;
   width: 50px;
   height: 39px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: normal;
@@ -2835,7 +2837,7 @@ blockquote.blockquote-style-1:before {
 }
 
 .newsletter-subscribe .title {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 200px;
   line-height: normal;
   color: rgba(255, 255, 255, 0.03);
@@ -3109,12 +3111,12 @@ blockquote.blockquote-style-1:before {
 }
 
 .counter .counter-number {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 48px;
 }
 
 .counter .counter-title {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   line-height: 30px;
 }
@@ -3475,8 +3477,8 @@ blockquote.blockquote-style-1:before {
 .challenge-iteam h6.title {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: start;
 }
@@ -3739,7 +3741,7 @@ blockquote.blockquote-style-1:before {
   transform: translate(0px, 0px);
   z-index: 2;
   overflow: hidden;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 100%;
 }
 
@@ -4156,7 +4158,7 @@ div[cursor-type="arrow"] .owl-carousel,
   right: -50px;
   top: 0;
   font-size: 80px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .countdown-wrapper .countdown:last-child:after {
@@ -4229,12 +4231,9 @@ div[cursor-type="arrow"] .owl-carousel,
   Button
 *****************************/
 .btn {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 160px;
-  height: 160px;
   padding: 15px;
   gap: 10px;
   background-color: transparent;
@@ -4272,20 +4271,6 @@ div[cursor-type="arrow"] .owl-carousel,
 .btn svg path {
   stroke: #ffffff;
   transition: all 0.35s ease-in-out;
-}
-
-.btn:after {
-  position: absolute;
-  content: "";
-  right: -6px;
-  top: -6px;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.35s ease-in-out;
-  z-index: -1;
-  border-radius: 100%;
 }
 
 .btn:hover, .btn:focus {
@@ -4332,15 +4317,13 @@ div[cursor-type="arrow"] .owl-carousel,
 }
 
 .btn-primary {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 14px;
   font-weight: 400;
   color: #ffffff;
-  border: none;
-  padding: 10px 45px;
+  border: 1px solid rgba(255,255,255,0);
+  padding: 13px 26px;
   border-radius: 50px;
-  background-color: #77BEFF;
-  background: linear-gradient(130deg, #3663D8 0%, #77BEFF 100%);
+  background-color: #04B9CB;
 }
 
 /* Small Button Arrow ----------------*/
@@ -4433,7 +4416,7 @@ div[cursor-type="arrow"] .owl-carousel,
 }
 
 .history-wrapper .history-year-sm {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   margin-bottom: 30px;
   background: linear-gradient(160deg, #3663D8 0%, #77BEFF 20%, #00D1FF 100%);
@@ -4447,14 +4430,14 @@ div[cursor-type="arrow"] .owl-carousel,
 }
 
 .history-wrapper .history-info .history-year-lg {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 110px;
   writing-mode: vertical-lr;
   transform: scale(-1);
   align-self: center;
   line-height: normal;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  color: rgba(255,255,255,0.2);
 }
 
 .history-wrapper .history-info .history-content p {
@@ -4539,7 +4522,7 @@ form textarea.form-control.pre-textarea {
 form.form-style-border .form-control {
   padding: 15px 20px;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 form.form-style-border .form-control:focus {
@@ -4548,7 +4531,7 @@ form.form-style-border .form-control:focus {
 
 form.form-dark .form-control {
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 form.form-dark .form-control::-ms-input-placeholder {
@@ -4613,9 +4596,9 @@ form.form-dark .form-control:focus {
 .timeline-item .timeline-info-number .timeline-number {
   font-size: 30px;
   line-height: normal;
-  font-weight: 600;
+  font-weight: 700;
   color: #77BEFF;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .timeline-item .timeline-info-content {
@@ -5011,7 +4994,7 @@ form.form-dark .form-control:focus {
 .marquee-wrapper .marquee-inner .marquee-item .title {
   position: relative;
   top: 3px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   line-height: normal;
   color: transparent;
@@ -5121,7 +5104,7 @@ form.form-dark .form-control:focus {
 
 .social-icon ul li a {
   font-size: 20px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   color: #ffffff;
   transition: all 0.5s ease-in-out;
@@ -5141,7 +5124,7 @@ form.form-dark .form-control:focus {
 
 .social-icon ul li.title {
   font-size: 20px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   color: #ffffff;
   position: relative;
@@ -5205,7 +5188,7 @@ form.form-dark .form-control:focus {
 .steps-wrapper .steps-item .step-number {
   display: block;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
   background: linear-gradient(160deg, #3663D8 0%, #77BEFF 20%, #00D1FF 100%);
@@ -5418,7 +5401,7 @@ form.form-dark .form-control:focus {
   color: #ffffff;
   font-size: 42px;
   line-height: 42px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -5594,7 +5577,7 @@ form.form-dark .form-control:focus {
 }
 
 .header-default .site-menu .main-menu .nav-item a {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   padding: 10px 0;
   color: #ffffff;
@@ -5827,7 +5810,7 @@ form.form-dark .form-control:focus {
 }
 
 .header-3 .site-menu .main-menu .nav-item a {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   padding: 10px 0;
   color: #ffffff;
@@ -6132,7 +6115,7 @@ form.form-dark .form-control:focus {
 .offcanvas.menu-overlay-offcanvas .navbar .navbar-nav .nav-item > a {
   display: inline-flex;
   padding: 0;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 70px;
   font-weight: 700;
   line-height: 1.2;
@@ -6163,7 +6146,7 @@ form.form-dark .form-control:focus {
   border: none;
   font-size: 28px;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .offcanvas.menu-overlay-offcanvas .navbar .navbar-nav .nav-item > .dropdown-menu {
@@ -6446,7 +6429,7 @@ form.form-dark .form-control:focus {
 
 .offcanvas-body .contact-info .number {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
   letter-spacing: -2px;
 }
@@ -6616,8 +6599,6 @@ form.form-dark .form-control:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2563ad;
-  background-blend-mode: multiply;
 }
 
 .inner-header .title {
@@ -6906,7 +6887,7 @@ form.form-dark .form-control:focus {
   position: absolute;
   font-size: 380px;
   line-height: 400px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   left: 0px;
   bottom: -17px;
@@ -7523,7 +7504,7 @@ form.form-dark .form-control:focus {
   height: 55px;
   width: 55px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #77BEFF;
 }
 
@@ -7787,7 +7768,7 @@ form.form-dark .form-control:focus {
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #ffffff;
   margin-bottom: 30px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .error-section .error-content .error-main-title .bg-text-stroke {
@@ -7803,7 +7784,7 @@ form.form-dark .form-control:focus {
   width: 100%;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: rgba(212, 214, 215, 0.2);
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .error-section .error-content .error-main-title .smile-icon {
@@ -7845,7 +7826,7 @@ form.form-dark .form-control:focus {
 }
 
 .coming-soon-section .countdown-wrapper .countdown span {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .inner-content {
@@ -7859,7 +7840,7 @@ form.form-dark .form-control:focus {
   line-height: normal;
   font-weight: 500;
   color: #ffffff;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .coming-soon-description {
@@ -7879,14 +7860,14 @@ form.form-dark .form-control:focus {
   margin: 0px;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #D4D6D7;
 }
 
 .rated-reviews h6 span {
   font-size: 22px;
   line-height: 22px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .rated-reviews h6 span i {
@@ -7966,7 +7947,7 @@ form.form-dark .form-control:focus {
   line-height: 28px;
   display: inline-block;
   margin: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   flex-shrink: 1;
 }
@@ -7991,7 +7972,7 @@ form.form-dark .form-control:focus {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 6px;
   color: #ffffff;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   line-height: 32px;
   margin-left: 8px;
@@ -8815,7 +8796,7 @@ form.form-dark .form-control:focus {
   justify-content: center;
   width: 50px;
   height: 39px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: normal;
@@ -8896,7 +8877,7 @@ form.form-dark .form-control:focus {
 }
 
 .blog-item.blog-style-3 .blog-footer .blog-catagory {
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 28px;
 }
@@ -9143,7 +9124,7 @@ form.form-dark .form-control:focus {
 }
 
 .site-footer.footer-dark .footer-copyright a {
-  font-weight: 600;
+  font-weight: 700;
   color: #77BEFF;
   background: linear-gradient(60deg, #3663D8 -20%, #77BEFF 100%);
   -webkit-background-clip: text;
@@ -9337,7 +9318,7 @@ form.form-dark .form-control:focus {
 .widget-recent-posts .recent-posts .post-info .post-title {
   display: block;
   color: #ffffff;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 1.3;
   font-weight: 500;
@@ -9472,7 +9453,7 @@ form.form-dark .form-control:focus {
   justify-content: center;
   width: 50px;
   height: 39px;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #D4D6D7;
   font-weight: normal;
@@ -9570,7 +9551,7 @@ form.form-dark .form-control:focus {
 .widget-info .number {
   font-size: 32px;
   line-height: 22px;
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #D4D6D7;
 }
 
@@ -9735,7 +9716,7 @@ form.form-dark .form-control:focus {
 
 .widget-address-info ul.address-info-list li .info span {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -9825,4 +9806,118 @@ form.form-dark .form-control:focus {
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
+}
+
+/*CUSTOM*/
+.py-40{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.map-wrapper{
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.map-wrapper iframe{
+  width: 100%;
+  height: 100%;
+}
+.accordion{
+  width: 100%;
+}
+.accordion .accordion-item{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.accordion-item h4{
+  width: 33%;
+}
+.accordion-item .right-ct{
+  width: 60%;
+}
+.accordion-item .toggle-btn{
+  width: 7%;
+}
+.acc-content-togle{
+  display: none;
+}
+.portfolio-grid{
+  width: 100%;
+  float: left;
+}
+.portfolio-item{
+  width: calc((100% - 40px) / 3);
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.portfolio-item:nth-child(4n){
+  margin-right: 0;
+}
+.ratio-75{
+  padding-top: 75%;
+}
+.portfolio-item .ratio{
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.portfolio-item .text{
+  position: relative;
+  padding-right: 90px;
+  padding-top: 16px;
+}
+.portfolio-item .text img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+.portfolio-item .text h3{
+  font-size: 22px;
+  line-height: 150%;
+}
+.portfolio-item:nth-child(4n-3){
+  width: 100%;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+.portfolio-item:nth-child(4n-3) .pic{
+  width: 60%;
+}
+.portfolio-item:nth-child(4n-3) .text{
+  width: 40%;
+  padding-left: 60px;
+}
+.portfolio-item:nth-child(4n-3) .text h3{
+  font-size: 36px;
+}
+.portfolio-item:nth-child(4n-3) .text img{
+  width: 82px;
+  height: 82px;
+  position: relative;
+  top: auto;
+  right: auto;
+  margin-bottom: 20px;
+}
+.portfolio-item:nth-child(8n-3){
+  flex-direction: row-reverse;
+}
+.portfolio-item:nth-child(8n-3) .text{
+  padding-left: 0;
+  padding-right: 60px;
 }
