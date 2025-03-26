@@ -251,16 +251,22 @@ body{
 .brand-stripes{
     background-color: #04B9CB;
     display: flex;
-    gap: 40px;
+    gap: 100px;
     padding: 25px;
     width: 150vw;
     justify-content: center;
     left:  -25vw;
     position: absolute;
 }
+.brand-stripes.marquee-wrapper .marquee-inner{
+    gap: 120px;
+}
 .brand-stripes:nth-child(1){
     transform: rotate(-4deg);
     z-index: 1;
+}
+.brand-stripes:nth-child(2).marquee-wrapper .marquee-inner{
+    animation: marquee-reverse 30s linear infinite;
 }
 .brand-stripes:nth-child(2){
     transform: rotate(4deg);
@@ -472,4 +478,12 @@ form button{
     background-color: #04B9CB;
     text-align: center;
     padding: 20px;
+}
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translatex(0);
+    }
 }
