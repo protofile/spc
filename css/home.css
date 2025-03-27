@@ -281,7 +281,7 @@ body{
     font-size: 16px;
 }
 .services-item .services-item-1{
-    font-size: ;
+    /* font-size: ; */
 }
 .brands{
     max-width: 100vw;
@@ -333,7 +333,7 @@ body{
     font-weight: bold;
 }
 .featured-work{
-    padding: 50px 20px;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +342,7 @@ body{
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .gallery-row{
     position: relative;
@@ -538,5 +538,55 @@ form button{
     }
     100% {
         transform: translatex(0);
+    }
+}
+@media (max-width:767px) {
+    .top-section{
+        background-size:cover;
+        padding-top: 125%;
+    }
+    .top-section-mid-text{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .top-section-mid-text h1{
+        font-size: 32px;
+    }
+    .description{
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: unset;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .description p{
+        font-size: 18px;
+    }
+    .about-us{
+        padding-top: 100px;
+    }
+}
+@media (max-width:1300px){
+    .about-us-wrapper{
+        gap: 80px;
+    }
+    .about-us-left{
+        width: 60%;
+    }
+    .about-us-left img{
+        max-width: 100%;
+    }
+    .image-gallery{
+        max-width: 100%;
+    }
+    .gallery-row{
+        flex: 1;
+    }
+    .gallery-row-group{
+        display: block;
+        flex: 1;
+    }
+    .gallery-row-group :nth-child(1){
+        margin-top: 5px;
     }
 }
