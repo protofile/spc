@@ -166,12 +166,24 @@ body{
     gap: 20px;
     margin-bottom: 40px;
 }
-.numeric-score{
+.numeric-score-porto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.numeric-score-porto span{
+    margin-left: 0!important;
+    margin-top: 20px;
+}
+.numeric-score,
+.numeric-score-porto div{
     border-bottom: 3px solid #3F3F3F;
     flex: 1;
     position: relative;
 }
-.numeric-score::after{
+
+.numeric-score::after,
+.numeric-score-porto div::after{
     content: "";
     position: absolute;
     width: 40px;
@@ -180,12 +192,14 @@ body{
     left: 0;
     background-color:#E63D00;
 }
-.numeric-score p{
+.numeric-score p,
+.numeric-score-porto div{
     font-weight: bold;
     font-size: 48px;
     display: inline-block;
     margin: 0;
 }
+.numeric-score-porto span,
 .numeric-score span{
     display: inline-block;
     font-weight: bold;
@@ -535,6 +549,23 @@ form button{
     background-color: #04B9CB;
     text-align: center;
     padding: 20px;
+}
+section.portfolio{
+    padding-top: 70px;
+}
+section.portfolio .container > .row,
+section.portfolio .title-style{
+    margin-bottom: 50px;
+}
+.media-section{
+    /* gap: 40px; */
+    row-gap: 24px;
+}
+.media-section img,
+.media-section video,
+.media-section iframe{
+    width: 100%;
+
 }
 @keyframes marquee-reverse {
     0% {
