@@ -552,6 +552,7 @@ form button{
 }
 section.portfolio{
     padding-top: 70px;
+    padding-bottom: 5px;
 }
 section.portfolio .container > .row,
 section.portfolio .title-style{
@@ -560,6 +561,7 @@ section.portfolio .title-style{
 .media-section{
     /* gap: 40px; */
     row-gap: 24px;
+    margin-bottom: calc(50px + 1rem)!important;
 }
 .media-section img,
 .media-section video,
