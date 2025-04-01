@@ -10160,6 +10160,20 @@ form.form-dark .form-control:focus {
 .services-list .section-title h2{
   font-size: 48px;
 }
+.accordion-item .toggle-btn{
+  background: none;
+  border: none;
+  width: 83px;
+  height: 83px;
+}
+.accordion-item.active .acc-content-togle{
+  display: block;
+}
+.career,
+.portfolio{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 @media only screen and (max-width: 768px){
   .hero-section{
     height: auto;
