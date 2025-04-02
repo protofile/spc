@@ -591,6 +591,30 @@ section.portfolio .title-style{
         transform: translatex(0);
     }
 }
+@media (max-width:1300px){
+    .about-us-wrapper{
+        gap: 80px;
+    }
+    .about-us-left{
+        width: 60%;
+    }
+    .about-us-left img{
+        max-width: 100%;
+    }
+    .image-gallery{
+        max-width: 100%;
+    }
+    .gallery-row{
+        flex: 1;
+    }
+    .gallery-row-group{
+        display: block;
+        flex: 1;
+    }
+    .gallery-row-group :nth-child(1){
+        margin-top: 5px;
+    }
+}
 @media (max-width:767px) {
     .top-section{
         background-size:cover;
@@ -616,31 +640,61 @@ section.portfolio .title-style{
     .about-us{
         padding-top: 100px;
     }
-}
-@media (max-width:1300px){
     .about-us-wrapper{
-        gap: 80px;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .about-us-left{
-        width: 60%;
-        display: flex;
-        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
     }
-    .about-us-left img{
-        max-width: 100%;
+    .our-services-top .title-style{
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+    }
+    .our-services-top{
+        display: block;
+        padding: 0 20px;
+    }
+    .title-style{
+        margin-bottom: 10px;
+    }
+    .services-item,
+    .services-item-1, 
+    .services-item-2, 
+    .services-item-3{
+        display: block;
+    }
+    .services-item-1, .services-item-2, .services-item-3{
+        padding: 10px 20px;
+    }
+    .services-item{
+        padding: 20px 0;
+    }
+    .title-custom-color{
+        font-size: 36px;
+    }
+    .featured-work .title-custom-color{
+        text-align: center;
     }
     .image-gallery{
-        max-width: 100%;
+        display: block;
     }
     .gallery-row{
-        flex: 1;
+        margin-top: 0 !important;
     }
-    .gallery-row-group{
+    .gallery-row, .gallery-row-group :nth-child(1){
+        margin-top: 10px !important;
+    }
+    .contact-us{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact-us-wrapper{
         display: block;
-        flex: 1;
-    }
-    .gallery-row-group :nth-child(1){
-        margin-top: 5px;
     }
 }
 @media (max-width:1180px){

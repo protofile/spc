@@ -840,5 +840,11 @@ NOTE: This file contains all scripts for the actual Template.
     POTENZA.casestudyFancy(),
     POTENZA.workspaces(),
     POTENZA.jarallaxBG();
+
+    $(".toggle-btn").click(function(tb){
+      tb.preventDefault();
+      $($(this).parent()).toggleClass("active");
+    });
+
   });
 })(jQuery);
