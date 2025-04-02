@@ -10244,4 +10244,17 @@ form.form-dark .form-control:focus {
   .orbit-platform{
     display: none;
   }
+  .hero-section .text{
+    padding-top: 0;
+  }
+  .hero-section .text h1{
+    font-size: 48px;
+  }
+  .hero-section .text h3{
+    font-size: 20px;
+  }
+  .header-default .site-logo{
+    min-width: 0;
+    width: 150px;
+  }
 }
