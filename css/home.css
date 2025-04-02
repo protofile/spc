@@ -2,6 +2,16 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+.button-light-blue{
+    background-color: #04B9CB;
+    padding: 12px 24px;
+    display: inline-block;
+    width: max-content;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    font-family: "Kanit", sans-serif;
+}
 .title-style{
     display: flex;
     align-items: center;
@@ -155,6 +165,10 @@ body{
     margin: auto;
     display: flex;
     gap: 120px;
+}
+.about-us-wrapper .title-style,
+.about-us-wrapper .title-custom-color{
+    margin-bottom: 1.5rem;
 }
 .about-us-right{
     display: flex;
@@ -609,6 +623,8 @@ section.portfolio .title-style{
     }
     .about-us-left{
         width: 60%;
+        display: flex;
+        align-items: center;
     }
     .about-us-left img{
         max-width: 100%;
@@ -625,5 +641,36 @@ section.portfolio .title-style{
     }
     .gallery-row-group :nth-child(1){
         margin-top: 5px;
+    }
+}
+@media (max-width:1180px){
+    .description{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-us-wrapper,
+    .our-services,
+    .contact-us{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .about-us{
+        min-height: unset;
+        padding-top: 100px;
+    }
+    .about-us-wrapper{
+        gap: 40px;
+    }
+
+}
+@media (max-width:1024px){
+    .title-custom-color{
+        font-size: 36px;
+    }
+    .title-style p{
+        font-size: 18px;
+    }
+    .numeric-score p, .numeric-score-porto div{
+        font-size: 36px;
     }
 }
