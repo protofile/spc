@@ -10003,49 +10003,49 @@ form.form-dark .form-control:focus {
 
 @keyframes planets-orbit {
   0%   {
-      transform: translate(-50%,-50%) rotateX(50deg) rotateZ(0);
-      -webkit-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(0);
-      -moz-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(0);
-      -ms-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(0);
-      -o-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(0);
+      transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(0);
+      -webkit-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(0);
+      -moz-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(0);
+      -ms-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(0);
+      -o-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(0);
 }
   50%   {
-    transform: translate(-50%,-50%) rotateX(64deg) rotateZ(180deg);
-    -webkit-transform: translate(-50%,-50%) rotateX(64deg) rotateZ(180deg);
-    -moz-transform: translate(-50%,-50%) rotateX(64deg) rotateZ(180deg);
-    -ms-transform: translate(-50%,-50%) rotateX(64deg) rotateZ(180deg);
-    -o-transform: translate(-50%,-50%) rotateX(64deg) rotateZ(180deg);
+    transform: translate(-50%,-50%) rotateX(64deg) rotateY(-5deg) rotateZ(180deg);
+    -webkit-transform: translate(-50%,-50%) rotateX(64deg) rotateY(-5deg) rotateZ(180deg);
+    -moz-transform: translate(-50%,-50%) rotateX(64deg) rotateY(-5deg) rotateZ(180deg);
+    -ms-transform: translate(-50%,-50%) rotateX(64deg) rotateY(-5deg) rotateZ(180deg);
+    -o-transform: translate(-50%,-50%) rotateX(64deg) rotateY(-5deg) rotateZ(180deg);
 }
     100% {
-      transform: translate(-50%,-50%) rotateX(50deg) rotateZ(360deg);
-      -webkit-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(360deg);
-      -moz-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(360deg);
-      -ms-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(360deg);
-      -o-transform: translate(-50%,-50%) rotateX(50deg) rotateZ(360deg);
+      transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(360deg);
+      -webkit-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(360deg);
+      -moz-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(360deg);
+      -ms-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(360deg);
+      -o-transform: translate(-50%,-50%) rotateX(48deg) rotateY(5deg) rotateZ(360deg);
 }
 }
 @keyframes planets-rotate {
   0%   {
-    transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-360deg);
-    -webkit-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-360deg);
-    -moz-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-360deg);
-    -ms-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-360deg);
-    -o-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(-360deg);
-  }
+    transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-360deg) rotateZ(0);
+    -webkit-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-360deg) rotateZ(0);
+    -moz-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-360deg) rotateZ(0);
+    -ms-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-360deg) rotateZ(0);
+    -o-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-360deg) rotateZ(0);
+}
   50% {
-    transform: translate(-50%,-50%) rotateX(-70deg) rotateY(-180);
-    -webkit-transform: translate(-50%,-50%) rotateX(-70deg) rotateY(-180);
-    -moz-transform: translate(-50%,-50%) rotateX(-70deg) rotateY(-180);
-    -ms-transform: translate(-50%,-50%) rotateX(-70deg) rotateY(-180);
-    -o-transform: translate(-50%,-50%) rotateX(-70deg) rotateY(-180);
+    transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-180deg) rotateZ(0);
+    -webkit-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-180deg) rotateZ(0);
+    -moz-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-180deg) rotateZ(0);
+    -ms-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-180deg) rotateZ(0);
+    -o-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(-180deg) rotateZ(0);
 }
   100% {
-      transform: translate(-50%,-50%) rotateX(-45deg) rotateY(0);
-      -webkit-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(0);
-      -moz-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(0);
-      -ms-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(0);
-      -o-transform: translate(-50%,-50%) rotateX(-45deg) rotateY(0);
-  }
+      transform: translate(-50%,-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
+      -webkit-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
+      -moz-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
+      -ms-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
+      -o-transform: translate(-50%,-50%) rotateX(-90deg) rotateY(0) rotateZ(0);
+}
 }
 @keyframes pulse{
   0%{
@@ -10072,7 +10072,7 @@ form.form-dark .form-control:focus {
 }
 @keyframes floating{
   0%{
-    margin-top: 200px;
+    top: 150px;
     transform: rotateX(64deg) rotateZ(0);
     -webkit-transform: rotateX(64deg) rotateZ(0);
     -moz-transform: rotateX(64deg) rotateZ(0);
@@ -10080,7 +10080,7 @@ form.form-dark .form-control:focus {
     -o-transform: rotateX(64deg) rotateZ(0);
 }
   50%{
-    margin-top: 250px;
+    top: 200px;
     transform: rotateX(64deg) rotateZ(180deg);
     -webkit-transform: rotateX(64deg) rotateZ(180deg);
     -moz-transform: rotateX(64deg) rotateZ(180deg);
@@ -10088,12 +10088,38 @@ form.form-dark .form-control:focus {
     -o-transform: rotateX(64deg) rotateZ(180deg);
 }
   100%{
-    margin-top: 200px;
+    top: 150px;
     transform: rotateX(64deg) rotateZ(360deg);
     -webkit-transform: rotateX(64deg) rotateZ(360deg);
     -moz-transform: rotateX(64deg) rotateZ(360deg);
     -ms-transform: rotateX(64deg) rotateZ(360deg);
     -o-transform: rotateX(64deg) rotateZ(360deg);
+}
+}
+@keyframes floating-2{
+  0%{
+    top: 220px;
+    transform: rotateX(64deg) rotateZ(0) scale(0.7);
+    -webkit-transform: rotateX(64deg) rotateZ(0) scale(0.7);
+    -moz-transform: rotateX(64deg) rotateZ(0) scale(0.7);
+    -ms-transform: rotateX(64deg) rotateZ(0) scale(0.7);
+    -o-transform: rotateX(64deg) rotateZ(0) scale(0.7);
+}
+  50%{
+    top: 260px;
+    transform: rotateX(64deg) rotateZ(180deg) scale(0.7);
+    -webkit-transform: rotateX(64deg) rotateZ(180deg) scale(0.7);
+    -moz-transform: rotateX(64deg) rotateZ(180deg) scale(0.7);
+    -ms-transform: rotateX(64deg) rotateZ(180deg) scale(0.7);
+    -o-transform: rotateX(64deg) rotateZ(180deg) scale(0.7);
+}
+  100%{
+    top: 220px;
+    transform: rotateX(64deg) rotateZ(360deg) scale(0.7);
+    -webkit-transform: rotateX(64deg) rotateZ(360deg) scale(0.7);
+    -moz-transform: rotateX(64deg) rotateZ(360deg) scale(0.7);
+    -ms-transform: rotateX(64deg) rotateZ(360deg) scale(0.7);
+    -o-transform: rotateX(64deg) rotateZ(360deg) scale(0.7);
 }
 }
 .planets{
@@ -10141,14 +10167,23 @@ form.form-dark .form-control:focus {
   perspective-origin: bottom;
 }
 .orbit-platform img{
+  position: absolute;
   transform-style: preserve-3d;
   transform: rotateX(64deg);
   -webkit-transform: rotateX(64deg);
   -moz-transform: rotateX(64deg);
   -ms-transform: rotateX(64deg);
   -o-transform: rotateX(64deg);
+}
+.orbit-platform img.orbit-bg-1{
   animation: floating linear infinite 12s reverse;
   -webkit-animation: floating linear infinite 12s reverse;
+}
+.orbit-platform img.orbit-bg-2{
+  animation: floating-2 linear infinite 12s reverse;
+  -webkit-animation: floating-2 linear infinite 12s;
+  z-index: -1;
+  opacity: 0.5;
 }
 .services-list .row{
   padding-top: 80px;
@@ -10173,6 +10208,21 @@ form.form-dark .form-control:focus {
 .portfolio{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.hero-section .row{
+  align-items: center;
+}
+.hero-section .text{
+  padding-top: 60px;
+}
+.hero-section .text h1{
+  line-height: 100%;
+  color: #05DBF1;
+  font-size: 64px;
+}
+.hero-section .text h3{
+  font-size: 24px;
+  line-height: 100%;
 }
 @media only screen and (max-width: 768px){
   .hero-section{
