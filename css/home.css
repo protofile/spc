@@ -615,6 +615,43 @@ section.portfolio .title-style{
         margin-top: 5px;
     }
 }
+@media (max-width:1180px){
+    .description{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-us-wrapper,
+    .our-services,
+    .contact-us{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .about-us{
+        min-height: unset;
+        padding-top: 100px;
+    }
+    .about-us-wrapper{
+        gap: 40px;
+    }
+
+}
+@media (max-width:1024px){
+    .title-custom-color{
+        font-size: 36px;
+    }
+    .title-style p{
+        font-size: 18px;
+    }
+    .numeric-score p, .numeric-score-porto div{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 @media (max-width:767px) {
     .top-section{
         background-size:cover;
@@ -661,7 +698,7 @@ section.portfolio .title-style{
     }
     .title-style{
         margin-bottom: 10px;
-    }
+    } 
     .services-item,
     .services-item-1, 
     .services-item-2, 
@@ -675,7 +712,7 @@ section.portfolio .title-style{
         padding: 20px 0;
     }
     .title-custom-color{
-        font-size: 36px;
+        font-size: 30px;
     }
     .featured-work .title-custom-color{
         text-align: center;
@@ -696,35 +733,15 @@ section.portfolio .title-style{
     .contact-us-wrapper{
         display: block;
     }
+    .portfolio .title-custom-color{
+        margin-bottom: 40px;
+    }
+    .case-study-desc{
+        margin-bottom: 30px;
+    }
 }
-@media (max-width:1180px){
-    .description{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .about-us-wrapper,
-    .our-services,
-    .contact-us{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .about-us{
-        min-height: unset;
-        padding-top: 100px;
-    }
-    .about-us-wrapper{
-        gap: 40px;
-    }
-
-}
-@media (max-width:1024px){
-    .title-custom-color{
-        font-size: 36px;
-    }
-    .title-style p{
-        font-size: 18px;
-    }
-    .numeric-score p, .numeric-score-porto div{
-        font-size: 36px;
+@media (max-width:550px){
+    .numeric-score-wrapper{
+        flex-direction: column;
     }
 }
