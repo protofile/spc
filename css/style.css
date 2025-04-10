@@ -247,7 +247,7 @@ label {
 
 @media (min-width: 1399px) {
   .container {
-    max-width: 1424px;
+    /* max-width: 1424px; */
   }
 }
 
@@ -9955,9 +9955,28 @@ form.form-dark .form-control:focus {
 }
 /*ORBIT*/
 .hero-section{
-  height: 720px;
-  padding-top: 100px;
+  /* height: 720px; */
+  padding-top: calc(39% + 100px);
   position: relative;
+}
+.hero-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  top: 0;
 }
 .hero-section img.hero-bg{
   width: 100%;
@@ -10163,7 +10182,7 @@ form.form-dark .form-control:focus {
   width: 100%;
   height: 100%;
   position: relative;
-  perspective: 400px;
+  perspective: 1000px;
   perspective-origin: bottom;
 }
 .orbit-platform img{
@@ -10212,21 +10231,69 @@ form.form-dark .form-control:focus {
 .hero-section .row{
   align-items: center;
 }
-.hero-section .text{
+/* .hero-section .text{
   padding-top: 60px;
-}
-.hero-section .text h1{
+} */
+.hero-section .text-dekstop h1{
   line-height: 100%;
   color: #05DBF1;
   font-size: 64px;
 }
-.hero-section .text h3{
+.hero-section .text-dekstop h3{
   font-size: 24px;
   line-height: 100%;
 }
+.text-mobile{
+  display: none;
+}
+.text-mobile h1{
+  color: #05DBF1;
+  line-height: 100%;
+  font-size: 42px;
+}
+.text-mobile h3{
+  line-height: 100%;
+  font-size: 24px;
+}
+.text-mobile p{
+  color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding:40px;
+}
+@media only screen and (max-width: 1024px){
+  .hero-section .text-dekstop h1{
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 768px){
+  .hero-section .row{
+    height: 100%;
+  }
+  .text-dekstop{
+    display: none;
+  }
+  .text-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+  }
   .hero-section{
     height: auto;
+  }
+  .hero-section{
+    padding-top: calc(100% + 100px);
+  }
+  .hero-section .container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  #myVideo{
+    width: calc(100% + 80px);
+    left: -40px;
   }
   .orbit-box{
     width: 340px;
@@ -10237,20 +10304,24 @@ form.form-dark .form-control:focus {
     width: 120px;
     height: 120px;
   }
+  .planets{
+    width: 80%;
+    height: 80%;
+  }
   .planets img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   .orbit-platform{
     display: none;
   }
-  .hero-section .text{
+  .hero-section .text-dekstop{
     padding-top: 0;
   }
-  .hero-section .text h1{
+  .hero-section .text-dekstop h1{
     font-size: 48px;
   }
-  .hero-section .text h3{
+  .hero-section .text-dekstop h3{
     font-size: 20px;
   }
   .header-default .site-logo{
