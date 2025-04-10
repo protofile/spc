@@ -247,7 +247,7 @@ label {
 
 @media (min-width: 1399px) {
   .container {
-    max-width: 1424px;
+    /* max-width: 1424px; */
   }
 }
 
@@ -9955,9 +9955,28 @@ form.form-dark .form-control:focus {
 }
 /*ORBIT*/
 .hero-section{
-  height: 720px;
-  padding-top: 100px;
+  /* height: 720px; */
+  padding-top: calc(39% + 100px);
   position: relative;
+}
+.hero-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  top: 0;
 }
 .hero-section img.hero-bg{
   width: 100%;
@@ -10212,9 +10231,9 @@ form.form-dark .form-control:focus {
 .hero-section .row{
   align-items: center;
 }
-.hero-section .text{
+/* .hero-section .text{
   padding-top: 60px;
-}
+} */
 .hero-section .text h1{
   line-height: 100%;
   color: #05DBF1;
@@ -10224,9 +10243,26 @@ form.form-dark .form-control:focus {
   font-size: 24px;
   line-height: 100%;
 }
+@media only screen and (max-width: 1024px){
+  .hero-section .text h1{
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 768px){
   .hero-section{
     height: auto;
+  }
+  .hero-section{
+    padding-top: calc(100% + 100px);
+  }
+  .hero-section .container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  #myVideo{
+    width: calc(100% + 80px);
+    left: -40px;
   }
   .orbit-box{
     width: 340px;

@@ -48,7 +48,7 @@ body{
     align-items: center;
     position: relative;
     background-repeat: no-repeat; 
-    padding-top: 62%;
+    padding-top: 720/1440;
 }
 .top-section-art, .circle-logo{
     position: absolute;
