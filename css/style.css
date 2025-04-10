@@ -10234,21 +10234,52 @@ form.form-dark .form-control:focus {
 /* .hero-section .text{
   padding-top: 60px;
 } */
-.hero-section .text h1{
+.hero-section .text-dekstop h1{
   line-height: 100%;
   color: #05DBF1;
   font-size: 64px;
 }
-.hero-section .text h3{
+.hero-section .text-dekstop h3{
   font-size: 24px;
   line-height: 100%;
 }
+.text-mobile{
+  display: none;
+}
+.text-mobile h1{
+  color: #05DBF1;
+  line-height: 100%;
+  font-size: 42px;
+}
+.text-mobile h3{
+  line-height: 100%;
+  font-size: 24px;
+}
+.text-mobile p{
+  color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding:40px;
+}
 @media only screen and (max-width: 1024px){
-  .hero-section .text h1{
+  .hero-section .text-dekstop h1{
     font-size: 50px;
   }
 }
 @media only screen and (max-width: 768px){
+  .hero-section .row{
+    height: 100%;
+  }
+  .text-dekstop{
+    display: none;
+  }
+  .text-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+  }
   .hero-section{
     height: auto;
   }
@@ -10284,13 +10315,13 @@ form.form-dark .form-control:focus {
   .orbit-platform{
     display: none;
   }
-  .hero-section .text{
+  .hero-section .text-dekstop{
     padding-top: 0;
   }
-  .hero-section .text h1{
+  .hero-section .text-dekstop h1{
     font-size: 48px;
   }
-  .hero-section .text h3{
+  .hero-section .text-dekstop h3{
     font-size: 20px;
   }
   .header-default .site-logo{
