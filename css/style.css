@@ -10262,17 +10262,42 @@ form.form-dark .form-control:focus {
   left: 0;
   padding:40px;
 }
+
+.hero-section.with-video{
+  padding-top: 0;
+  height: 720px;
+}
+.hero-section.with-video video{
+  width: 100%;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.hero-section.with-video .row{
+  align-items: center;
+  height: 720px;
+}
+.for-mobile{
+  display: none;
+}
+
 @media only screen and (max-width: 1024px){
   .hero-section .text-dekstop h1{
     font-size: 50px;
   }
 }
 @media only screen and (max-width: 768px){
+  .for-desktop{
+    display: none;
+  }
+  .for-mobile{
+    display: block;
+  }
   .hero-section .row{
     height: 100%;
-  }
-  .text-dekstop{
-    display: none;
   }
   .text-mobile{
     display: flex;
@@ -10316,16 +10341,30 @@ form.form-dark .form-control:focus {
     display: none;
   }
   .hero-section .text-dekstop{
-    padding-top: 0;
+    padding-top: 240px;
   }
   .hero-section .text-dekstop h1{
-    font-size: 48px;
+    font-size: 42px;
   }
   .hero-section .text-dekstop h3{
     font-size: 20px;
   }
+  .hero-section .text-dekstop p{
+    font-size: 14px;
+  }
   .header-default .site-logo{
     min-width: 0;
     width: 150px;
+  }
+  .hero-section.with-video .row{
+    height: 100vh;
+  }
+  .hero-section .text-dekstop h3,
+  .hero-section .text-dekstop h1,
+  .hero-section .text-dekstop p{
+    text-align: center !important;
+  }
+  .hero-section.with-video video{
+    height: 680px;
   }
 }
