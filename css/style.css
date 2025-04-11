@@ -10368,3 +10368,18 @@ form.form-dark .form-control:focus {
     height: 680px;
   }
 }
+@media only screen and (max-width: 768px) and (min-width: 500px){
+  .hero-section.with-video video{
+    height: 1200px;
+    object-position: top;
+  }
+  .hero-section .text-dekstop{
+    margin-top: 600px;
+  }
+  .hero-section.with-video{
+    height: 1200px;
+  }
+  .hero-section .text-dekstop p{
+    font-size: 18px;
+  }
+}
